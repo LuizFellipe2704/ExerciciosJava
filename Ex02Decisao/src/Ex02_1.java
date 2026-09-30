@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*-------------------------------------------------------------------
     Ex 2.1: Subtotal e raspadinhas
     - informar o valor da compra
@@ -16,5 +18,16 @@
 -------------------------------------------------------------------*/
 public class Ex02_1 {
         public static void main(String[] args) {
+       double valorcompra;
+       double raspadinhas;
+       Scanner entrada = new Scanner(System.in);
+    System.out.print("Qual foi o valor da compra?: ");
+    valorcompra = entrada.nextDouble();
+    raspadinhas = Math.floor(valorcompra/100);//math.floor não arredonda para cima
+    System.out.print("Você terá direito a "+raspadinhas+" raspadinhas");
+
+
+
+
         }
 }

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*-------------------------------------------------------------------
   Ex 1.6: Consumo do carro
   - informar uma quantidade inteira de quilômetros
@@ -23,6 +25,16 @@
 -------------------------------------------------------------------*/
 public class Ex01_6 {
     public static void main(String[] args) {
+    int km;
+    int L;
+    Scanner entrada = new Scanner(System.in);
+    System.out.print("Quantos Km Você percorreu? ");
+    km = entrada.nextInt();
+    System.out.print("Quantos Litros foram consumidos? ");
+    L = entrada.nextInt();
+    double ConsumoMedio;
+    ConsumoMedio = (double)km/L;
+    System.out.print("O consumo médio foi: "+ConsumoMedio);
 
     }
 }
