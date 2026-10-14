@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*-------------------------------------------------------------------
   Ex 2.2: Confirmacao de senha
   - informar uma senha
@@ -19,5 +21,21 @@
   -------------------------------------------------------------------*/
 public class Ex02_2 {
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite sua senha: \n");
+        String senha1 = entrada.nextLine();
+
+        System.out.print("digite novamente sua senha: \n");
+        String senha2 = entrada.nextLine();
+        if (senha1.equals(senha2)) {
+            System.out.println("Acesso Autorizado com Sucesso");
+        }
+      else {
+                System.out.println("Senha Incorreta");
+      }
+
+
+
     }
 }
