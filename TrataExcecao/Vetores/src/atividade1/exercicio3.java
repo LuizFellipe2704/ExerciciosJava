@@ -15,8 +15,17 @@ public class exercicio3 {
         double[] notas = new double[indice];
 
         for (int i = 0; i < notas.length; i++) {
-            System.out.print("Digite o nome para a posição " + (i + 1) + ": ");
-            notas[i] = input.nextDouble();
+            System.out.print("Digite a nota aqui " + (i + 1) + ": ");
+          notas[i] = input.nextDouble();
         }
+       double soma=0;
+       for(int i = 0 ; i < notas.length; i++) {
+       System.out.println("Nota "+(i+1) +" = " +notas[i]);
+       soma += notas[i];;
+       }
+       double media = soma / indice;
+      System.out.println("Média = " + media);
+     input.close();
     }
+
 }
